@@ -26,7 +26,7 @@ taxa_B = 1 + (taxa_B / 100)
 
 cont_anos = 0
 
-# Verificações lógicas
+# Lógica de crescimento populacional
 if pais_A == pais_B:
     print('Populações iguais! Inválido!')
     print('Reinicie o programa!')
@@ -35,12 +35,12 @@ if (pais_A > pais_B and taxa_A >= taxa_B) or (pais_B > pais_A and taxa_B >= taxa
     print('Dados inválidos! A população nunca será alcançada!')
     exit()
 
-# Armazenar histórico para gráfico
+# Armazenar os dados para gráfico
 anos = [0]
 hist_A = [pais_A]
 hist_B = [pais_B]
 
-# Simulação
+
 if pais_A < pais_B:
     while pais_A < pais_B:
         pais_A *= taxa_A
