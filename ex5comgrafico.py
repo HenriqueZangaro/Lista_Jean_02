@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg') 
 import matplotlib.pyplot as plt
 
 # Primeiro país
@@ -75,4 +77,5 @@ plt.ylabel('População')
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.show()
+plt.savefig('crescimento_populacional.png')
+print(f"\nO gráfico foi salvo como 'crescimento_populacional.png' no diretório atual.")
